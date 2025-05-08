@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 server:
   log_level: info
 
@@ -32,3 +33,39 @@ logs:
           basic_auth:
             username: 1188025
             password: glc_eyJvIjoiMTQwNDY2MCIsIm4iOiJzdGFjay0xMjMwMjI4LWhsLXdyaXRlLTEyMzQ1NiIsImsiOiI2NGprOXdtNmRZWVNXM1IxM1QwbXkzMXAiLCJtIjp7InIiOiJwcm9kLWV1LW5vcnRoLTAifX0=
+=======
+server:
+  log_level: info
+
+logs:
+  configs:
+    - name: telegram-logs
+      positions:
+        filename: C:\Users\User\Desktop\dev_analytic_search\grafana-agent\positions.yaml
+      scrape_configs:
+        - job_name: telegram_data
+          static_configs:
+            - targets: [localhost]
+              labels:
+                job: telegram_data
+                __path__: C:\Users\User\Desktop\dev_analytic_search\backend\logs\telegram_parsed\*.log
+
+          pipeline_stages:
+            - json:
+                expressions:
+                  date: date
+                  views: views
+                  text: text
+                  date_coding: timestamp
+            - labels:
+                date:
+                views:
+                text:
+                date_coding:
+
+      clients:
+        - url: https://logs-prod-025.grafana.net/loki/api/v1/push
+          basic_auth:
+            username: 1188025
+            password: glc_eyJvIjoiMTQwNDY2MCIsIm4iOiJzdGFjay0xMjMwMjI4LWhsLXdyaXRlLTEyMzQ1NiIsImsiOiI2NGprOXdtNmRZWVNXM1IxM1QwbXkzMXAiLCJtIjp7InIiOiJwcm9kLWV1LW5vcnRoLTAifX0=
+>>>>>>> Stashed changes
