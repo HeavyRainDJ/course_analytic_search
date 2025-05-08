@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.labels_text {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+}
+
+.right_text {
+    display: flex; 
+    gap: 3vw; 
+    margin-right: 1vw;
+}
+
+.crypto_text {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 1.25vw;
+    background: linear-gradient(117deg, rgba(59, 246, 134, 1) 51%, rgba(76, 169, 255, 1) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 1vw;
+}
+
+.links_text {
+    font-family: "Inter", serif;
+    font-size: 1.25vw;
+    background: linear-gradient(160deg, rgba(92, 211, 177, 1) 100%, rgba(142, 199, 183, 1) 56%, rgba(56, 153, 127, 1) 67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.palka {
+    height: 0.3vw;
+    border-radius: 20rem;
+    background-color: rgba(77, 77, 77, 1);
+    width: 100%; 
+}

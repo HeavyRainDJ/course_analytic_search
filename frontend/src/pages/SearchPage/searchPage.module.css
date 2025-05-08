@@ -1,0 +1,90 @@
+.main_head {
+  display:flex;
+  justify-content: center;
+}
+.search_page {
+  justify-content: center;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  font-family: "Inter", serif;
+  font-size: 1.25vw;
+  color: aliceblue;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.086);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  width: min(90vw, 500px);
+  text-align: center;
+  margin: 8rem auto;
+  backdrop-filter: blur(10px);
+  
+}
+
+.input {
+  width: calc(100% - 25px);
+  padding: 12px;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(68, 178, 99, 0.3);
+  outline: none;
+  text-align: center; /* Выровнял текст внутри input */
+  font-size: 16px;
+  color: aliceblue;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.151);
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: aliceblue;
+  margin-top: 1rem;
+}
+.button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top: 5px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.grafana_button {
+  width: 100%;
+  padding: 12px;
+  background: #F46800;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.grafana_button:hover {
+  background: #E55400;
+}

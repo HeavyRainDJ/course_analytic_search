@@ -1,0 +1,14 @@
+.search_page {
+  display:flex;
+  justify-content: center;
+}
+
+.main{
+  display: block;
+}
+
+.main_circle{
+  display: flex;
+  flex-direction: column;
+  padding: 8vw 38vw;
+}
